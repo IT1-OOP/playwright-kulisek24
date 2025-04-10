@@ -24,4 +24,4 @@ def test_page_title():
         expect(w3_link).to_be_visible()
         w3_link.click() 
 
-        browser.close()
+        
