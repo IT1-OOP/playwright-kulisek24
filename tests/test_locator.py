@@ -12,7 +12,7 @@ def test_page_title():
         page.goto(f"file://{cesta}")
 
         nadpis_1 = page.locator('h1').first
-        nadpis_text = page.locator('text="Nadpis1"')
+        nadpis_text = page.locator('text="Nadpis 1"')
         div_1 = page.locator('.container')
 
         expect(nadpis_1).to_be_visible()
@@ -23,5 +23,7 @@ def test_page_title():
         w3_link = page.locator('#w3link')
         expect(w3_link).to_be_visible()
         w3_link.click() 
+
+        browser.close()
 
         
